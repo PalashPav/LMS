@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System - Admin Panel</title>
+  <link rel="stylesheet" href="AdminPanel.css">
+</head>
+<body>
+
+
+  <div class="sidebar">
+    <h2>Admin Panel</h2>
+    <nav>
+      <ul>
+       
+        <li><button onclick="toggleForm('addBookForm')">Add Book</button></li>
+        <li><button onclick="toggleForm('issueBookForm')">Issue Book</button></li>
+        <li><button onclick="toggleForm('returnBookForm')">Return Book</button></li>
+        <li><button onclick="toggleForm('registerStudentForm')">Student Registration</button></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <div class="main-content">
+    <header>
+      <h1>Welcome to the Library Management System</h1>
+      <p>Manage library books, issue, and return operations</p>
+    </header>
+
+
+    <section class="dashboard">
+      <h2>Dashboard</h2>
+      <p>Overview of library statistics.</p>
+    </section>
+
+
+    <section id="addBookForm" class="form-section" style="display: none;">
+      <h2>Add Book</h2>
+      <form action="addbook.php" method="post">
+        <label for="bookId">Book ID:</label>
+        <input type="text" id="bookId" name="bookId" required>
+
+        <label for="bookName">Book Name:</label>
+        <input type="text" id="bookName" name="bookName" required>
+
+        <label for="publisher">Publisher:</label>
+        <input type="text" id="publisher" name="publisher" required>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" required>
+
+        <button type="submit">Add Book</button>
+      </form>
+    </section>
+
+    
+    <section id="issueBookForm" class="form-section" style="display: none;">
+      <h2>Issue Book</h2>
+      <form action="issuebook.php" method="post">
+        
+        <label for="issueBookId">Book ID:</label>
+        <input type="text" id="issueBookId" name="issueBookId" required>
+        
+        <label for="issueBookName">Book Name:</label>
+        <input type="text" id="issueBookName" name="issueBookName" required>
+
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" required>
+
+        <label for="studentId">Student ID:</label>
+        <input type="text" id="studentId" name="studentId" required>
+
+        <label for="issueDate">Issue Date:</label>
+        <input type="date" id="issueDate" name="issueDate" required>
+
+        <button type="submit">Issue Book</button>
+      </form>
+    </section>
+
+  
+    <section id="returnBookForm" class="form-section" style="display: none;">
+      <h2>Return Book</h2>
+      <form action="returnbook.php" method="post">
+        <label for="returnBookId">Book ID:</label>
+        <input type="text" id="returnBookId" name="returnBookId" required>
+
+        <label for="returnBookName">Book Name:</label>
+        <input type="text" id="returnBookName" name="returnBookName" required>
+
+        <label for="studentReturnName">Student Name:</label>
+        <input type="text" id="studentReturnId" name="studentReturnName" required>
+
+
+        <label for="studentReturnId">Student ID:</label>
+        <input type="text" id="studentReturnId" name="studentReturnId" required>
+
+        <label for="returnDate">Return Date:</label>
+        <input type="date" id="returnDate" name="returnDate" required>
+        <button type="submit">Return Book</button>
+      </form>
+    </section>
+
+ 
+    <section id="registerStudentForm" class="form-section" style="display: none;">
+      <h2>Student Registration</h2>
+       
+      <a href="newLogin.html" target="_blank" >Student Registration</a>
+
+  </div>
+
+<script src="AdminPanel.js"></script>
+
+</body>
+</html>
