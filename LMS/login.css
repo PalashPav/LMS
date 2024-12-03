@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    width: 350px;
+    transition: all 0.3s ease;
+}
+
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgot-password, .new_User {
+    margin-bottom: 20px;
+}
+
+.forgot-password a, .new_User a {
+    color: green;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.forgot-password a:hover, .new_User a:hover {
+    color: black;
+}
+
+
+.new_User a:hover {
+    color: black;
+}
+
+.radio-group p {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+    
+}
+
+.radio-group label {
+    margin-right: 10px;
+    font-weight: 400;
+    color: #666;
+    display: inline-block;
+    
+    
+}
+.radio-group{
+    align-items: center;
+    justify-content: space-around;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    transform: scale(0.98); 
+}
